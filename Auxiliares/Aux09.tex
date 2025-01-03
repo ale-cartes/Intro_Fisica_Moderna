@@ -1,0 +1,109 @@
+\documentclass[letterpaper,11pt]{article}
+\oddsidemargin -1.0cm \textwidth 17.5cm
+
+\usepackage[utf8]{inputenc}
+\usepackage[activeacute,spanish]{babel}
+\usepackage{amsfonts,setspace}
+\usepackage{amsmath}
+\usepackage{amssymb, amsmath, amsthm}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{dsfont}
+\usepackage{anysize}
+\usepackage{multicol}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage[left=1.5cm,top=1.5cm,right=1.5cm, bottom=1.7cm]{geometry}
+\setlength\headheight{1.5em} 
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{physics}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\labelenumi}{\normalsize\bfseries P\arabic{enumi}.}
+\renewcommand{\labelenumii}{\normalsize\bfseries (\alph{enumii})}
+\renewcommand{\labelenumiii}{\normalsize\bfseries \roman{enumiii})}
+
+\begin{document}
+
+\fancyhead[L]{\itshape{Facultad de Ciencias F\'isicas y Matem\'aticas}}
+\fancyhead[R]{\itshape{Universidad de Chile}}
+
+\begin{minipage}{11.5cm}
+    \begin{flushleft}
+        \hspace*{-0.6cm}\textbf{FI1100-6 Introducción a la Física Moderna}\\
+        \hspace*{-0.6cm}\textbf{Profesor:} Diego Mardones\\
+        \hspace*{-0.6cm}\textbf{Auxiliares:} Gabriel O\textsc{\char13}Ryan, Camila Sepúlveda, Alejandro Silva\\
+        \hspace*{-0.6cm}\textbf{Ayudante:} Sebastián Vargas
+    \end{flushleft}
+\end{minipage}
+
+\begin{picture}(2,3)
+    \put(366, 10){\includegraphics[scale=0.9]{Imágenes/logo/dfi-fcfm.pdf}}
+\end{picture}
+
+\begin{center}
+	\LARGE\textbf{Auxiliar \#9:}\\
+	\Large{Efecto fotoeléctrico y átomo de Bohr}
+\end{center}
+
+\vspace{-1cm}
+\begin{enumerate}\setlength{\itemsep}{0.4cm}
+
+\rfoot[]{pág. \thepage}
+
+\item[]
+
+\item Los fotoelectrones emitidos desde una chapa de cesio iluminada con luz ultravioleta de longitud de onda 2000 {\AA} son detenidos por un potencial de 4.21 V. ¿Cuál es la función trabajo del cesio?
+
+\item La frecuencia media emitida por una bombilla eléctrica de 200 W es 5.00$\cdot 10^{14}$~Hz, y el $10\%$ de la potencia se emite como luz visible. ¿Cuántos fotones de luz visible se emiten por segundo?
+
+\item Un haz de luz de 2.50 W y con longitud de onda de 124 nm incide sobre una superficie de metal. Usted observa que la energía cinética máxima de los electrones expulsados es de 4.16 eV. Suponga que cada fotón en el haz expulsa un fotoelectrón.
+
+    \begin{enumerate}
+        \item ¿Cuál es la función trabajo de este metal?
+        
+        \item ¿Cuántos fotoelectrones son expulsados cada segundo de este metal?
+        
+        \item Si la potencia del haz de luz, pero no su longitud de onda, se redujera a la mitad, ¿cuánto cambia lo obtenido en la parte (b)?
+        
+        \item Si la longitud de onda del haz, pero no su potencia, se redujera a la mitad, ¿cuánto cambia lo obtenido en la parte (b)?
+    \end{enumerate}
+
+
+\item Vamos a demostrar para un átomo hidrogenoide que $E~\propto~n^{-2}$, para ello:
+\begin{enumerate}
+    \item Recordando que la fuerza electrostática es de la forma
+    $$\abs{\vec{F}} = \frac{K q_1 q_2}{r^2} $$
+    
+    Utilizando además que $L = n\hbar$, obtenga una expresión para el radio de órbita de un electrón.
+    
+    \item Recordando que la energía potencial para la fuerza de Coulomb se define como
+    $$ U = -\frac{Kq_1q_2}{r}$$
+    
+    Determine una expresión para la energía.
+    
+    \item Con esto demuestre que para dos niveles de energía $n, m$ (con $m>n$) se tiene que la transición de un estado de mayor energía a uno de menor energía cumple:
+    $$\frac{1}{\lambda} = Z^2 R_H\left(\frac{1}{n^2}-\frac{1}{m^2}\right)$$
+\end{enumerate}
+\item
+    \begin{enumerate}
+        \item ¿Cuál es la cantidad mínima de energía que se debe transmitir a un átomo de hidrógeno que al principio está en su nivel fundamental, para que pueda emitir la línea $H_{\alpha}$ de la serie de Balmer?
+        
+        \item ¿Cuántas posibilidades distintas de emisiones de líneas espectrales hay para este átomo cuando el electrón comienza en el nivel $n = 3$ y termina en el nivel fundamental? Calcule la longitud de onda del fotón emitido en cada caso.
+    \end{enumerate}
+
+\item Considere un átomo de berilio (Z=4) al cual se le quitan tres electrones. Para este átomo:
+\begin{enumerate}
+    \item ¿Cuál es la energía fundamental? Compare con el átomo de Hidrógeno.
+    \item ¿Cuál es la energía de ionización? Compare con el átomo de Hidrógeno.
+    \item Para el Hidrógeno se tiene que la longitud de onda emitida por un fotón debido a una transición de n=2 a n=1 es 122 nm. ¿Cuál será la longitud de onda emitida de un fotón debido a esta misma transición?
+    
+    \item Para un valor dado de $n$, compare el radio de órbita de un electrón en este átomo con el hidrógeno.
+\end{enumerate}
+\end{enumerate}
+\end{document}

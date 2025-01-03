@@ -1,0 +1,102 @@
+\documentclass[letterpaper,11pt]{article}
+\oddsidemargin -1.0cm \textwidth 17.5cm
+
+\usepackage[utf8]{inputenc}
+\usepackage[activeacute,spanish]{babel}
+\usepackage{amsfonts,setspace}
+\usepackage{amsmath}
+\usepackage{amssymb, amsmath, amsthm}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{dsfont}
+\usepackage{anysize}
+\usepackage{multicol}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage[left=1.5cm,top=1.5cm,right=1.5cm, bottom=1.7cm]{geometry}
+\setlength\headheight{1.5em} 
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\labelenumi}{\normalsize\bfseries P\arabic{enumi}.}
+\renewcommand{\labelenumii}{\normalsize\bfseries (\alph{enumii})}
+\renewcommand{\labelenumiii}{\normalsize\bfseries \roman{enumiii}}
+
+
+\begin{document}
+
+\fancyhead[L]{\itshape{Facultad de Ciencias F\'isicas y Matem\'aticas}}
+\fancyhead[R]{\itshape{Universidad de Chile}}
+
+\begin{minipage}{11.5cm}
+    \begin{flushleft}
+        \hspace*{-0.6cm}\textbf{FI1100-6 Introducción a la Física Moderna}\\
+        \hspace*{-0.6cm}\textbf{Profesor:} Diego Mardones\\
+        \hspace*{-0.6cm}\textbf{Auxiliares:} Gabriel O\textsc{\char13}Ryan, Camila Sepúlveda, Alejandro Silva\\
+        \hspace*{-0.6cm}\textbf{Ayudante:} Sebastián Vargas
+    \end{flushleft}
+\end{minipage}
+
+\begin{picture}(2,3)
+    \put(366, 10){\includegraphics[scale=0.9]{Imágenes/logo/dfi-fcfm.pdf}}
+\end{picture}
+
+\begin{center}
+	\LARGE\textbf{Auxiliar \#  }\\
+	\Large{Lentes y el ojo}
+\end{center}
+
+\vspace{-1cm}
+\begin{enumerate}\setlength{\itemsep}{0.4cm}
+
+\rfoot[]{pág. \thepage}
+
+\item []
+\item Considere un objeto infinitamente a la izquierda y los siguientes sistemas:
+\begin{itemize}
+    \item 2 lentes convergentes separados por una distancia d
+    \item 2 lentes divergentes separados por una distancia d
+    \item 1 lente convergente y 1 divergente separados por una distancia d
+\end{itemize}
+
+Calcule la imagen a ver en el lado derecho para los 3 casos.
+(Hint: considere los lentes individualmente pero usando que la imagen generada por uno será la recibida por el otro.)
+
+\item Al inicio del verano te das cuenta que debido que en la cuarentena pasaste mucho tiempo cerca de dispositivos electrónicos la radiación emitida te genero la capacidad sobrehumana de poder respirar bajo el agua. Emocionado entras al mar a explorar sus profundos rincones solo para darte cuenta que todo se ve borroso, para solucionar esto decides armarte unos lentes.
+
+Para esto, te armas una serie de preguntas a responder:
+
+a) \textbf{¿Que le sucede al ojo bajo el agua?}: Primero, calcule a que parte del ojo llega la luz de un objeto cuando viene desde el infinito, considerando que los índices de refracción $n_{ojo} =1.4 $, $n_{liq}=1.33 $ y usando la relación objeto-imagen superficie refractiva esférica.
+
+\begin{equation}
+    \frac{n_{a}}{s} + \frac{n_{b}}{s'} = \frac{n_{b}-n_{a}}{R}
+\end{equation}
+
+b) \textbf{¿Como se ve bajo el agua?} ¿Qué tan lejano está la imagen generada de la cornea? Asuma que la distancia de la cornea a la retina es de 2.6 cm.
+
+c) \textbf{¿Que le sucede a los lentes bajo el agua?}: Ahora calcule la distancia focal para un lente de índice de refracción $n$ inmerso en un fluido con índice de refracción $n_{liq}$.
+
+d) \textbf{Considerando lo anterior, ¿como se podría ver bien bajo el agua?}:Para poder ver claramente bajo el agua, la luz debe llegar directamente a la retina. Asumiendo que los lentes están a 2 cm de la cornea, ¿que debe cumplir el lente para que se vea bien la imagen?.
+
+
+\item []
+
+\textbf{Regla de signos}:
+\begin{itemize} 
+    \item Si la fuente está en el mismo lado de la luz entrante la distancia s es positiva, sino negativa
+    \item Si la imagen está en el mismo lado de la luz saliente la distancia $s'$ es positiva, sino negativa.
+    \item Si el lente es convexo o convergente, $f > 0$. 
+    \item si el lente es cóncavo o divergente, $f < 0$.
+    \item La ecuación de espejos curvos bajo la aproximación de lente delgado es:
+    \begin{equation}
+    \frac{1}{s}+\frac{1}{s'}=\frac{1}{f}
+     \end{equation}
+\end{itemize}
+
+\end{enumerate}
+\end{document}

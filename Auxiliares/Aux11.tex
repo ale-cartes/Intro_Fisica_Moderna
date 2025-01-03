@@ -1,0 +1,114 @@
+\documentclass[letterpaper,11pt]{article}
+\oddsidemargin -1.0cm \textwidth 17.5cm
+
+\usepackage[utf8]{inputenc}
+\usepackage[activeacute,spanish, es-lcroman]{babel}
+\decimalpoint
+\usepackage{amsfonts,setspace}
+\usepackage{amsmath}
+\usepackage{amssymb, amsmath, amsthm}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{dsfont}
+\usepackage{anysize}
+\usepackage{multicol}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage[left=1.5cm,top=1.5cm,right=1.5cm, bottom=1.7cm]{geometry}
+\setlength\headheight{1.5em} 
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage{cancel}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\labelenumi}{\normalsize\bfseries P\arabic{enumi}.}
+\renewcommand{\labelenumii}{\normalsize\bfseries (\alph{enumii})}
+\renewcommand{\labelenumiii}{\normalsize\bfseries \roman{enumiii})}
+
+\begin{document}
+
+\fancyhead[L]{\itshape{Facultad de Ciencias F\'isicas y Matem\'aticas}}
+\fancyhead[R]{\itshape{Universidad de Chile}}
+
+\begin{minipage}{11.5cm}
+    \begin{flushleft}
+        \hspace*{-0.6cm}\textbf{FI1100-6 Introducción a la Física Moderna}\\
+        \hspace*{-0.6cm}\textbf{Profesor:} Diego Mardones\\
+        \hspace*{-0.6cm}\textbf{Auxiliares:} Gabriel O\textsc{\char13}Ryan, Camila Sepúlveda, Alejandro Silva\\
+        \hspace*{-0.6cm}\textbf{Ayudante:} Sebastián Vargas
+    \end{flushleft}
+\end{minipage}
+
+\begin{picture}(2,3)
+    \put(366, 10){\includegraphics[scale=0.9]{Imágenes/logo/dfi-fcfm.pdf}}
+\end{picture}
+
+\begin{center}
+	\LARGE\textbf{Auxiliar \# 11:}\\
+	\Large{Ecuación de Schrödinger}
+\end{center}
+
+\vspace{-1cm}
+\begin{enumerate}\setlength{\itemsep}{0.4cm}
+
+\rfoot[]{pág. \thepage}
+
+\item[]
+
+\item 
+    \begin{enumerate}
+        \item Una partícula alfa ($m = \SI{6.64}{\cdot 10^{-27}\kg}$) emitida en el decaimiento radiactivo del uranio 238 tiene \SI{4.20}{\mega\eV} de energía. ¿Cuál es su longitud de onda de De Broglie?
+        
+        \item Calcule la longitud de onda de De Broglie de una persona común que pasa caminando por una entrada. La persona, ¿muestra comportamiento ondulatorio cuando pasa por una sola rendija? ¿Por qué?
+    \end{enumerate}
+
+\item Una partícula en movimiento en una dimensión (el eje $x$) se describe por la función de onda:
+\[\psi(x) = A \mathop{e^{-b|x|}} = 
+\begin{cases}
+    A\mathop{e^{-bx}}, & \text{si } x \geq 0\\
+    A\mathop{e^{bx}}, & \text{si } x<0
+\end{cases}\] 
+
+donde $b = \SI{2.00}{\m^{-1}}$, $A>0$ y el eje x apunta hacia la derecha.
+    \begin{enumerate}
+        \item Determine $A$ de manera que se normalice la función de onda
+        
+        \item Grafique la función de onda
+        
+        \item Calcule la probabilidad de encontrar esta partícula en cada una de las siguientes regiones:
+            \begin{enumerate}
+                \item Dentro de los \SI{50.0}{\cm} del origien
+                
+                \item Del lado izquierdo del origen
+                
+                \item Entre $x = \SI{0.500}{\m}$ y $x = \SI{1.00}{\m}$
+            \end{enumerate}
+    \end{enumerate}
+    
+\item Considere la ecuación de Schrödinger dependiente del tiempo:
+\[\left(-\frac{\hbar^2}{2m}\frac{\partial^2 }{\partial x^2} + U(x)\right)\Psi(x,t) = i\hbar \frac{\partial\Psi(x,t)}{\partial t}\]
+
+Si $\psi(x)$ es una solución de la ecuación independiente del tiempo con energía $E$, demuestre que la solución a esta ecuación toma la forma $\Psi(x,t)=\psi(x)\mathop{e^{-i\omega t}}$. ¿Cuál es el valor de $\omega$?
+
+\item Considere una partícula de masa $m$ en una caja de tamaño $L$ cuyo potencial está descrito por:
+\[V(x) = 
+    \begin{cases}
+        +\infty & x<-L/2 \\
+        0 & -L/2\leq x\leq L/2\\
+        +\infty & x>L/2
+    \end{cases}
+\]
+
+    \begin{enumerate}
+        \item Demuestre que la partícula tendrá niveles de energía definidos por:
+        \[E_n = \frac{n^2 h^2}{8mL^2}\]
+        
+        \item Si un átomo de hidrógeno se modela como una caja unidimensional de longitud igual al radio de Bohr, ¿cuál es la energía del nivel mínimo  de energía del electrón?
+    \end{enumerate}
+\end{enumerate}
+\end{document}

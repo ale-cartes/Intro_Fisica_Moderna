@@ -1,0 +1,112 @@
+\documentclass[letterpaper,11pt]{article}
+\oddsidemargin -1.0cm \textwidth 17.5cm
+
+\usepackage[utf8]{inputenc}
+\usepackage[activeacute,spanish, es-lcroman]{babel}
+\decimalpoint
+\usepackage{amsfonts,setspace}
+\usepackage{amsmath}
+\usepackage{amssymb, amsmath, amsthm}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{dsfont}
+\usepackage{anysize}
+\usepackage{multicol}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage[left=1.5cm,top=2cm,right=1.5cm, bottom=1.7cm]{geometry}
+\setlength\headheight{1.5em} 
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage{cancel}
+\usepackage{mdwlist}
+\usepackage{svg}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\labelenumi}{\normalsize\bfseries P\arabic{enumi}.}
+\renewcommand{\labelenumii}{\normalsize\bfseries (\alph{enumii})}
+\renewcommand{\labelenumiii}{\normalsize\bfseries \roman{enumiii})}
+
+
+\begin{document}
+
+\fancyhead[L]{\itshape{Facultad de Ciencias F\'isicas y Matem\'aticas}}
+\fancyhead[R]{\itshape{Universidad de Chile}}
+\rfoot[]{pág. \thepage}
+
+\begin{minipage}{11.5cm}
+    \begin{flushleft}
+        \hspace*{-0.6cm}\textbf{FI1100 Introducción a la Física Moderna}\\
+        \hspace*{-0.6cm}\textbf{Tutor:} Alejandro Cartes
+    \end{flushleft}
+\end{minipage}
+
+\begin{picture}(2,3)
+    \put(366, -10){\includegraphics[scale=0.9]{Imágenes/logo/dfi-fcfm.pdf}}
+\end{picture}
+
+\begin{center}
+    \LARGE\textbf{Tutoría Examen}\\
+    \large{Ec. de Schrödinger y Relatividad Especial}
+\end{center}
+
+\vspace{-1cm}
+\begin{enumerate}\setlength{\itemsep}{0.4cm}
+
+\item[]
+
+\item Una partícula en movimiento en una dimensión (el eje $x$) se describe por la función de onda:
+\[\psi(x) = A \mathop{e^{-b|x|}} = 
+\begin{cases}
+    A\mathop{e^{-bx}}, & \text{si } x \geq 0\\
+    A\mathop{e^{bx}}, & \text{si } x<0
+\end{cases}\] 
+
+donde $b = \SI{2.00}{\m^{-1}}$, $A>0$ y el eje x apunta hacia la derecha.
+    \begin{enumerate}
+        \item Determine $A$ de manera que se normalice la función de onda.
+        
+        \item Grafique la función de onda.
+        
+        \item Calcule la probabilidad de encontrar esta partícula en cada una de las siguientes regiones:
+            \begin{enumerate}
+                \item Dentro de los \SI{50.0}{\cm} del origen
+                
+                \item Del lado izquierdo del origen
+                
+                \item Entre $x = \SI{0.500}{\m}$ y $x = \SI{1.00}{\m}$
+            \end{enumerate}
+    \end{enumerate}
+
+\item Dos naves espaciales, cada una de \SI{100}{\m} de longitud (cuando se miden en reposo) viajan una hacia la otra con velocidades de $0.85c$ relativas a la Tierra.
+
+    \begin{enumerate}
+        \item ¿Qué longitud tiene cada nave medida por un observador desde la Tierra?
+
+        \item ¿Qué velocidad tiene cada nave medida por un observador de la otra nave?
+
+        \item ¿Qué longitud tiene cada nave medida por un observador de la otra nave?
+
+        \item En el tiempo $t=0$ se ve desde la Tierra que las dos naves tienen sus extremos frontales en contacto, es decir, comienzan a cruzarse. ¿En qué momento se verán juntos desde la Tierra los extremos posteriores?
+    \end{enumerate}
+
+% "C:\Users\aleja\fcfm\Auxiliares y Ayudantías\Intro a la Física Moderna\semestres anteriores\Material Intro Física Moderna Mardones 2020-1\Aux 10 Relatividad Especial\Aux 10 Relatividad Especial.pdf"
+\item Al mediodía, un cohete pasa por la Tierra a una velocidad $v=0.8 c$. Tanto los observadores en la nave como los observadores en la Tierra están de acuerdo en que son las 12:00 en punto. 
+
+    \begin{enumerate}
+        \item A las 12:30 pm del reloj del cohete, la nave pasa por una estación espacial interplanetaria a una distancia $d$ fija de la Tierra y cuyo reloj está sincronizado con el de la Tierra. ¿Qué hora es en dicha estación?
+
+        \item ¿Cuán lejos de la Tierra está la estación?
+
+        \item Precisamente a las 12:30 pm, según el reloj del cohete, el capitán de la nave manda un reporte por radio de vuelta hacia la Tierra. ¿A qué hora terrestre llega la señal?
+
+        \item La estación en la Tierra responde en forma inmediata. ¿Qué hora marca el reloj de la nave cuando la respuesta llega de vuelta?
+    \end{enumerate}
+
+\end{enumerate}
+\end{document}
